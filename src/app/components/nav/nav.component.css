@@ -1,0 +1,48 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   
+ }
+
+ .router-outlet {
+   z-index: 1;
+ }
+ 
+ .toolbar {
+  text-align: center;
+   z-index: 2;
+   background-color: #fdfcfc;
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+ }
+ 
+ h1.app-name {
+   margin-left: 8px;
+   color: #707580;
+ }
+ 
+ .sidenav-container {
+   height: 100%;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   background-color: #fdfcfc;
+   flex: 1;
+   background-color: #EEEEEE;
+ }
+
+ .sidenav-container i {
+   margin-right: .6rem;
+   color: #52565f;
+   
+}
+.sidenav-container a {
+  margin-right: .6rem;
+  color: #707580;
+}
+.toolbar > .rightMenu1 {
+  position: absolute;
+  right: 15px;
+ }

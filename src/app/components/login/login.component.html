@@ -1,0 +1,55 @@
+<div class="container-login">
+  <div class="img-box">
+    <img src="assets/img/suporte.svg" />
+  </div>
+  <div class="content-box">
+    <div class="form-box">
+      <h2>Helpdesk</h2>
+      <form>
+        <div class="input-box">
+          <span>E-mail</span>
+          <input
+            [formControl]="email"
+            required
+            [(ngModel)]="creds.email"
+            name="email"
+            matInput
+            placeholder="Ex. fulano@mail.com"
+          />
+        </div>
+
+        <div class="input-box">
+          <span>Senha</span>
+          <input
+            [formControl]="senha"
+            required
+            [(ngModel)]="creds.senha"
+            name="senha"
+            type="password"
+            matInput
+            placeholder="Ex. 123"
+          />
+        </div>
+
+        <div class="remember">
+          <label> <input type="checkbox" /> Lembrar me </label>
+          <a href="#">Esqueceu a Senha?</a>
+        </div>
+
+        <button
+          (click)="logar()"
+          [disabled]="!validaCampos()"
+          type="submit"
+          class="button-87"
+          role="button"
+        >
+          Entrar
+        </button>
+
+        <div class="input-box">
+          <p>Não Tem Uma Conta? <a href="#">Inscrever-se</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

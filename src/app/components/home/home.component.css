@@ -1,0 +1,11 @@
+.card {
+   z-index: 1;
+   width: 90%;
+   margin: 1rem auto;
+   background-color: #FFFFFF;
+}
+
+img {
+   z-index: 1;
+   height: 20rem;
+}
